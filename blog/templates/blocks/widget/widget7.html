@@ -1,0 +1,12 @@
+<aside class="list music aside section">
+    <div class="section-inner">
+        <h2 class="heading">Catalog</h2>
+        <div class="content">
+            <ul class="list-unstyled">
+                {% for item in list_catalog %}
+                <li><i class="fa fa-tags"></i> <a href="{% url 'blog:catalog' item.id %}">{{ item.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div><!--//content-->
+    </div><!--//section-inner-->
+</aside>
